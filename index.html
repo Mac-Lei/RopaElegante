@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L’mon - Tienda de Ropa Sustentable hola hola</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ===== INPUTS (ocultos para controlar categorías) ===== -->
+  <input type="radio" name="categoria" id="todo" checked>
+  <input type="radio" name="categoria" id="trajes-hombre">
+  <input type="radio" name="categoria" id="trajes-mujer">
+  <input type="radio" name="categoria" id="vestidos">
+  <input type="radio" name="categoria" id="camisas">
+  <input type="radio" name="categoria" id="poleras">
+  <input type="radio" name="categoria" id="pantalones">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header-top">
+    <div class="logo-titulo">
+      <img src="imagenes/L'Mon (Claro).jpg" alt="Logo L'mon" class="logo">
+      <h1>L’mon</h1>
+    </div>
+    <nav class="menu">
+      <label for="todo">Todo</label>
+      <label for="trajes-hombre">Trajes de Hombre</label>
+      <label for="trajes-mujer">Trajes de Mujer</label>
+      <label for="vestidos">Vestidos</label>
+      <label for="camisas">Camisas</label>
+      <label for="poleras">Poleras</label>
+      <label for="pantalones">Pantalones Elegantes</label>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- ===== TODO (solo imágenes) ===== -->
+    <div class="gallery all">
+      <img src="imagenes/traje1.jpeg" alt="Traje 1">
+      <img src="imagenes/traje2.jpeg" alt="Traje 2">
+      <img src="imagenes/traje3.jpeg" alt="Traje 3">
+      <img src="imagenes/mujer1.jpeg" alt="Mujer 1">
+      <img src="imagenes/mujer2.jpeg" alt="Mujer 2">
+      <img src="imagenes/mujer3.jpeg" alt="Mujer 3">
+      <img src="imagenes/polera1.jpeg" alt="Polera 1">
+      <img src="imagenes/polera2.jpeg" alt="Polera 2">
+      <img src="imagenes/polera3.jpeg" alt="Polera 3">
+      <img src="imagenes/vestido1.jpeg" alt="Vestido 1">
+      <img src="imagenes/vestido2.jpeg" alt="Vestido 2">
+      <img src="imagenes/vestido3.jpeg" alt="Vestido 3">
+      <img src="imagenes/camisa1.jpeg" alt="Camisa 1">
+      <img src="imagenes/camisa2.jpeg" alt="Camisa 2">
+      <img src="imagenes/camisa3.jpeg" alt="Camisa 3">
+      <img src="imagenes/pantalon1.jpeg" alt="Pantalón 1">
+      <img src="imagenes/pantalon2.jpeg" alt="Pantalón 2">
+      <img src="imagenes/pantalon3.jpeg" alt="Pantalón 3">
+    </div>
+
+    <!-- ===== TRAJES DE HOMBRE ===== -->
+    <div class="gallery trajes-hombre">
+      <div class="item">
+        <img src="imagenes/traje1.jpeg" alt="Traje 1">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 5 unidades</p>
+          <p><strong>Tela:</strong> Lino orgánico</p>
+          <p class="precio"><strong>Precio:</strong> $89.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/traje2.jpeg" alt="Traje 2">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 8 unidades</p>
+          <p><strong>Tela:</strong> Lana reciclada</p>
+          <p class="precio"><strong>Precio:</strong> $94.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/traje3.jpeg" alt="Traje 3">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> No</p>
+          <p><strong>Cantidad disponible:</strong> 0 unidades</p>
+          <p><strong>Tela:</strong> Algodón orgánico</p>
+          <p class="precio"><strong>Precio:</strong> $79.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRAJES DE MUJER ===== -->
+    <div class="gallery trajes-mujer">
+      <div class="item">
+        <img src="imagenes/mujer1.jpeg" alt="Traje Mujer 1">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 6 unidades</p>
+          <p><strong>Tela:</strong> Seda natural certificada</p>
+          <p class="precio"><strong>Precio:</strong> $89.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/mujer2.jpeg" alt="Traje Mujer 2">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 7 unidades</p>
+          <p><strong>Tela:</strong> Bambú sustentable</p>
+          <p class="precio"><strong>Precio:</strong> $84.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/mujer3.jpeg" alt="Traje Mujer 3">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> No</p>
+          <p><strong>Cantidad disponible:</strong> 0 unidades</p>
+          <p><strong>Tela:</strong> Cáñamo ecológico</p>
+          <p class="precio"><strong>Precio:</strong> $99.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== VESTIDOS ===== -->
+    <div class="gallery vestidos">
+      <div class="item">
+        <img src="imagenes/vestido1.jpeg" alt="Vestido 1">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 9 unidades</p>
+          <p><strong>Tela:</strong> Algodón orgánico</p>
+          <p class="precio"><strong>Precio:</strong> $74.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/vestido2.jpeg" alt="Vestido 2">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 4 unidades</p>
+          <p><strong>Tela:</strong> Lino ecológico</p>
+          <p class="precio"><strong>Precio:</strong> $69.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/vestido3.jpeg" alt="Vestido 3">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> No</p>
+          <p><strong>Cantidad disponible:</strong> 0 unidades</p>
+          <p><strong>Tela:</strong> Algodón reciclado</p>
+          <p class="precio"><strong>Precio:</strong> $59.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CAMISAS ===== -->
+    <div class="gallery camisas">
+      <div class="item">
+        <img src="imagenes/camisa1.jpeg" alt="Camisa 1">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 12 unidades</p>
+          <p><strong>Tela:</strong> Algodón orgánico</p>
+          <p class="precio"><strong>Precio:</strong> $39.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/camisa2.jpeg" alt="Camisa 2">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 10 unidades</p>
+          <p><strong>Tela:</strong> Bambú ecológico</p>
+          <p class="precio"><strong>Precio:</strong> $42.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/camisa3.jpeg" alt="Camisa 3">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> No</p>
+          <p><strong>Cantidad disponible:</strong> 0 unidades</p>
+          <p><strong>Tela:</strong> Lino reciclado</p>
+          <p class="precio"><strong>Precio:</strong> $44.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== POLERAS ===== -->
+    <div class="gallery poleras">
+      <div class="item">
+        <img src="imagenes/polera1.jpeg" alt="Polera 1">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 15 unidades</p>
+          <p><strong>Tela:</strong> Algodón reciclado</p>
+          <p class="precio"><strong>Precio:</strong> $24.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/polera2.jpeg" alt="Polera 2">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 9 unidades</p>
+          <p><strong>Tela:</strong> Cáñamo sustentable</p>
+          <p class="precio"><strong>Precio:</strong> $19.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/polera3.jpeg" alt="Polera 3">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> No</p>
+          <p><strong>Cantidad disponible:</strong> 0 unidades</p>
+          <p><strong>Tela:</strong> Bambú natural</p>
+          <p class="precio"><strong>Precio:</strong> $22.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PANTALONES ===== -->
+    <div class="gallery pantalones">
+      <div class="item">
+        <img src="imagenes/pantalon1.jpeg" alt="Pantalón 1">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 11 unidades</p>
+          <p><strong>Tela:</strong> Lino orgánico</p>
+          <p class="precio"><strong>Precio:</strong> $59.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/pantalon2.jpeg" alt="Pantalón 2">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> Sí</p>
+          <p><strong>Cantidad disponible:</strong> 8 unidades</p>
+          <p><strong>Tela:</strong> Algodón reciclado</p>
+          <p class="precio"><strong>Precio:</strong> $64.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="imagenes/pantalon3.jpeg" alt="Pantalón 3">
+        <div class="info">
+          <p><strong>Stock disponible:</strong> No</p>
+          <p><strong>Cantidad disponible:</strong> 0 unidades</p>
+          <p><strong>Tela:</strong> Mezcla ecológica algodón-lino</p>
+          <p class="precio"><strong>Precio:</strong> $54.990</p>
+          <button class="btn-comprar">Ver más / Comprar</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>

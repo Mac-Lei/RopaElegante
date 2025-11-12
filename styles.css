@@ -1,0 +1,203 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f9f8f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+
+/* ===== MENÚ DE CATEGORÍAS ===== */
+.menu {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu label {
+  background-color: #f2efe9;
+  border: 1px solid #d6cfc4;
+  color: #2b2b2b;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95em;
+}
+
+.menu label:hover {
+  background-color: #d4b26a;
+  color: #fff;
+  border-color: #d4b26a;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* ===== GALERÍAS ===== */
+main {
+  padding: 30px 10%;
+}
+
+.gallery {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery.all {
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* ===== MOSTRAR SEGÚN CATEGORÍA ===== */
+#todo:checked ~ main .gallery.all { display: flex; }
+#trajes-hombre:checked ~ main .gallery.trajes-hombre { display: flex; }
+#trajes-mujer:checked ~ main .gallery.trajes-mujer { display: flex; }
+#vestidos:checked ~ main .gallery.vestidos { display: flex; }
+#camisas:checked ~ main .gallery.camisas { display: flex; }
+#poleras:checked ~ main .gallery.poleras { display: flex; }
+#pantalones:checked ~ main .gallery.pantalones { display: flex; }
+
+/* ===== ITEMS DE PRODUCTO ===== */
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 260px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.item img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 10px 15px 20px 15px;
+  text-align: left;
+}
+
+.info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.info .precio {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #b48a2b;
+}
+
+/* ===== BOTÓN COMPRAR ===== */
+.btn-comprar {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3a5a40; /* 🌿 Verde oscuro elegante */
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #588157;
+  transform: scale(1.03);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .gallery img, .item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .menu label {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+}
+
+/* ----- HEADER Y LOGO ----- */
+.header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%; /* opcional, si quieres un efecto circular elegante */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
